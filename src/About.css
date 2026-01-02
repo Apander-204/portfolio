@@ -1,0 +1,38 @@
+.about {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    width: 40%;
+}
+
+.about-title {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.about-item-img {
+    width: 15px;
+    height: 15px;
+}
+
+.about-item-title {
+    font-size: 20px;
+}
+
+.about-item-data {
+    font-size: 20px;
+}
