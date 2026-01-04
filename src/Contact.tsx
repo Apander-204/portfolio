@@ -49,23 +49,14 @@ const Contact = () => {
                 </form>
                 <div className="contacts">
                     <div className="about-item">
-                        <div className="about-item-img">
-
-                        </div>
                         <p className="about-item-title">Name</p>
                         <p className="about-item-data">Andrey Panin</p>
                     </div>
                     <div className="about-item">
-                        <div className="about-item-img">
-
-                        </div>
                         <p className="about-item-title">Phone</p>
                         <p className="about-item-data">+7 923 559 07 57</p>
                     </div>
                     <div className="about-item">
-                        <div className="about-item-img">
-
-                        </div>
                         <p className="about-item-title">Email</p>
                         <p className="about-item-data">apander204@gmail.com</p>
                     </div>

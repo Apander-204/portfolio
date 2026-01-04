@@ -2,41 +2,43 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .home-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
 }
 
 .home-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 50%;
 }
 
 .home-title {
     font-size: 100px;
-    margin-bottom: 20px;
 }
 
 .home-subtitle {
     font-size: 50px;
-    margin-bottom: 10px;
 }
 
 .home-text {
     font-size: 20px;
-    margin-bottom: 10px;
 }
 
 .home-live-container {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .home-buttons {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 .home-contact-btn {
@@ -62,6 +64,12 @@
     margin-bottom: 20px;
 }
 
+.footer-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 .home-right-container {
     width: 50%;
     display: flex;
@@ -69,6 +77,6 @@
 }
 
 .home-img {
-    width: 500px;
-    height: 500px;
+    max-width: 600px;
+    max-height: 600px;
 }

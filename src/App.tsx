@@ -25,7 +25,6 @@ function App() {
     <div>
       <Header setMenu={setMenu} />
       {testOpenMenu()}
-      {/* <Projects /> */}
     </div>
   )
 }
