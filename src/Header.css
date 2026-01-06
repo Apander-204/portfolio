@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    background-color: var(--bgc);
 }
 
 .header-container {
@@ -15,8 +16,9 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    box-shadow: 0px 1px 10px 0px rgba(34, 60, 80, 0.37);
+    box-shadow: var(--shadow);
     border-radius: 20px;
+    background-color: var(--bgc);
 }
 
 .header-item {
@@ -27,8 +29,8 @@
     gap: 5px;
     width: 95px;
     cursor: pointer;
-    background-color: #232323;
-    color: white;
+    background-color: var(--dark-bgc);
+    color: var(--dark-text);
     border-radius: 15px;
     padding: 5px;
 }
@@ -40,4 +42,5 @@
 
 .header-item-text {
     font-size: 20px;
+    color: var(--dark-text);
 }

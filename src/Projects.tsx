@@ -5,36 +5,50 @@ import Project from './Project';
 type project = {
     title: string;
     description: string;
+    link: string;
     img: string;
     stack: string[];
 };
 
-const Projects = () => {
+const Projects = ({ language }) => {
+
+    const translations = {
+        "en": {
+            projects_title: "My Projects",
+        },
+        "ru": {
+            projects_title: "Мои проекты",
+        }
+    }
 
     const [openProject, setOpenProject] = useState<project | null>(null);
 
     const projects: project[] = [
         {
             title: "Members Only",
-            description: "test",
+            description: "Hello, this is my learning project that was created during the TheOdinProject Node JS & Express course.",
+            link: "",
             img: "../public/project1.jpg",
             stack: ["JavaScript", "NodeJS", "ExpressJS", "EJS", "PostgreSQL", "PassportJS"]
         },
         {
             title: "File Uploader",
-            description: "test",
+            description: "Hello, this is my learning project that was created during the TheOdinProject Node JS & Express course.",
+            link: "",
             img: "test2",
             stack: ["JavaScript", "NodeJS", "ExpressJS", "EJS", "PostgreSQL", "PassportJS", "Multer"]
         },
         {
             title: "Blog API",
-            description: "test",
+            description: "Hello, this is my learning project that was created during the TheOdinProject Node JS & Express course.",
+            link: "",
             img: "test2",
             stack: ["JavaScript", "NodeJS", "ExpressJS", "EJS", "PostgreSQL", "JWT"]
         },
         {
             title: "Skin Genetator",
             description: "test",
+            link: "",
             img: "test2",
             stack: ["JavaScript", "React", "TypeScript", "Vite"]
         },
@@ -42,7 +56,7 @@ const Projects = () => {
 
     return (
         <div className="projects">
-            <h1 className="projects-title">My Projects</h1>
+            <h1 className="projects-title">{translations[language].projects_title}</h1>
 
             {
                 openProject ? (<Project project={openProject} setProject={setOpenProject}/>) : ""

@@ -1,10 +1,13 @@
+import ThemeSwitcher from './ThemeSwitcher';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
 
-const Header = ({ setMenu }: {setMenu: React.Dispatch<React.SetStateAction<string>>}) => {
+const Header = ({ setMenu, theme, setTheme, setLanguage }: {setMenu: React.Dispatch<React.SetStateAction<string>>; theme: string; setTheme: React.Dispatch<React.SetStateAction<string>>}) => {
     
 
     return(
         <div className="header">
+            <ThemeSwitcher theme={theme} setTheme={setTheme}/>
             <div className="header-container">
                 <div className="header-item" onClick={() => setMenu("Home")}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><path fill="currentColor" d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2M568 868H456V664h112zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7l23.1 23.1L882 542.3z"/></svg>
@@ -23,6 +26,7 @@ const Header = ({ setMenu }: {setMenu: React.Dispatch<React.SetStateAction<strin
                     <a className="header-item-text">Contact</a>
                 </div>
             </div>
+            <LanguageSwitcher setLanguage={setLanguage}/>
         </div>
     );
 };

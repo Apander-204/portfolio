@@ -2,13 +2,22 @@ import { useState } from "react";
 import emailjs from 'emailjs-com';
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({ language }) => {
 
     const [inputName, setInputName] = useState("");
     const [inputEmail, setInputEmail] = useState("");
     const [inputText, setInputText] = useState("");
 
     const [error, setError] = useState("");
+
+    const translations = {
+        "en": {
+            contact_title: "Contact me",
+        },
+        "ru": {
+            contact_title: "Связаться со мной",
+        }
+    }
 
     const sendMessage = async () => {
 
@@ -35,7 +44,7 @@ const Contact = () => {
     return (
         <div className="contact">
 
-            <h1 className="contact-title">Contact us</h1>
+            <h1 className="contact-title">{translations[language].contact_title}</h1>
 
             <div className="contact-container">
                 <form className="contact-form" onSubmit={(e) => {

@@ -16,6 +16,7 @@ const Project = ( { project, setProject }:{project: project; setProject: React.D
                     <img src={project.img} />
                 </div>
                 <p className="project-description">{project.description}</p>
+                <a href="https://blog-api-top-4b3t.onrender.com/">Link to demo site</a>
             </div>
 
             <div className="project-stack">
