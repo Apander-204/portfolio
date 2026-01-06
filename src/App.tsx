@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header theme={theme} setTheme={setTheme} setMenu={setMenu} setLanguage={setLanguage} />
+      <Header theme={theme} setTheme={setTheme} setMenu={setMenu} setLanguage={setLanguage} language={language} />
       {testOpenMenu()}
     </div>
   )

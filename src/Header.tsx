@@ -2,8 +2,7 @@ import ThemeSwitcher from './ThemeSwitcher';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
 
-const Header = ({ setMenu, theme, setTheme, setLanguage }: {setMenu: React.Dispatch<React.SetStateAction<string>>; theme: string; setTheme: React.Dispatch<React.SetStateAction<string>>}) => {
-    
+const Header = ({ setMenu, theme, setTheme, setLanguage, language }: {setMenu: React.Dispatch<React.SetStateAction<string>>; theme: string; setTheme: React.Dispatch<React.SetStateAction<string>>}) => {
 
     return(
         <div className="header">
@@ -26,7 +25,7 @@ const Header = ({ setMenu, theme, setTheme, setLanguage }: {setMenu: React.Dispa
                     <a className="header-item-text">Contact</a>
                 </div>
             </div>
-            <LanguageSwitcher setLanguage={setLanguage}/>
+            <LanguageSwitcher setLanguage={setLanguage} language={language} />
         </div>
     );
 };
